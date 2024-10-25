@@ -47,8 +47,8 @@ With the increasing number of vehicles on roads, traffic sign recognition plays 
 5. **Backend Implementation:** Used Flask to connect the front end with the machine learning model.
 
 ## Team Members
-- **Prateek Singh (Team Leader)**  
-- **Ajhar Ali**  
+- **Prateek Singh (Team Leader)** - [GitHub Profile](https://github.com/prateek0809)
+- **Ajhar Ali** - [GitHub Profile](https://github.com/AjharAli)
 - **Ishita Gupta**  
 - **Vaibhav Yadav**  
 
