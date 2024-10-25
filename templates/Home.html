@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <link rel="stylesheet" href="/static/Home.css">
+  <link rel="icon" type="image/x-icon" href="/static/Images/logo.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body id="home-img">
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="icons">
+        <i class="fas fa-list fa-lg" onclick="togglePageLinks(event)"></i> <!-- Adjust icon size here -->
+      </div>
+      <div class="page-links" id="pageLinks">
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="dataset.html">Dataset Distribution</a>
+        <a href="performance.html">Performance Analysis</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Traffic Sign Board Recognition And Voice Assisted System</h1>
+  </div>
+
+  <script>
+    function togglePageLinks(event) {
+      event.stopPropagation(); // Prevents body click event from firing
+      var pageLinks = document.getElementById("pageLinks");
+      // Toggle the display of page links
+      pageLinks.style.display = pageLinks.style.display === "block" ? "none" : "block";
+    }
+
+    // Close page links when clicking outside the menu
+    window.addEventListener("click", function(event) {
+      var pageLinks = document.getElementById("pageLinks");
+      if (event.target !== pageLinks) {
+        pageLinks.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

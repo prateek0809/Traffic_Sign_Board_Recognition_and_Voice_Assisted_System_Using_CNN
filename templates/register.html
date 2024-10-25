@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register Page</title>
+<link rel="stylesheet" href="/static/styles.css">
+<link rel="icon" type="image/x-icon" href="/static/Images/logo.ico">
+</head>
+<body id="reg-body">
+    
+    <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+<div class="main">
+    <div class="container" id="reg-container">
+    <h2 id="text">Register</h2>
+    <form id="registerForm">
+        <div class="error" id="registerError"></div>
+        <input type="text" id="registerName" placeholder="Full Name" required>
+        <input type="text" id="registerUsername" placeholder="Username" required>
+        <span id="usernameAvailability"></span> <!-- Display availability message here -->
+        <input type="password" id="registerPassword" placeholder="Password (min. 6 characters, special character required)" required>
+        <div id="passwordError" class="error"></div> <!-- Display password error here -->
+        <input type="date" id="registerDob" required>
+        <input type="email" id="registerEmail" placeholder="Email" required>
+        <input type="submit" id="reg-btn" value="Register">
+    </form>
+</div>
+</div>
+<script src="/static/js/register_script.js"></script>
+
+</body>
+</html>

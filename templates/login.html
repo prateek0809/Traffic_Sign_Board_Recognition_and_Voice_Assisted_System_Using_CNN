@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body id="login-body">
+
+<nav>
+    <ul>
+        <li><a href="/">Logout</a></li> <!-- Corrected the anchor tag -->
+    </ul>
+</nav>
+
+<div class="container" id="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <div class="error" id="loginUsernameError"></div>
+        <input type="text" id="loginUsername" placeholder="Username" required>
+        <div class="error" id="loginPasswordError"></div>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <input type="submit" value="Login">
+        <div class="error" id="loginError"></div>
+        <a href="forgetpsw.html">Forgot Password?</a> <!-- Link to the forgot password page -->
+    </form>
+</div>
+
+<script src="/static/js/login_script.js"></script>
+
+</body>
+</html>
