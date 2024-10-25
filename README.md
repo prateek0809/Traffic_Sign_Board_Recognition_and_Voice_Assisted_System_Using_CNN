@@ -1,8 +1,5 @@
 # Traffic Sign Board Recognition and Voice-Assisted System using CNN
 
-## Project Overview
-The **Traffic Sign Board Recognition and Voice-Assisted System** is a machine learning project aimed at developing an automated solution to identify traffic signboards and provide real-time voice assistance to the driver. Using Convolutional Neural Networks (CNN), this system recognizes and interprets traffic signs, enhancing road safety and helping drivers navigate more efficiently.
-
 ### Table of Contents
 - [Project Overview](#Project-Overview)
 - [Problem Statement](#Problem-Statement)
@@ -15,6 +12,9 @@ The **Traffic Sign Board Recognition and Voice-Assisted System** is a machine le
 - [How to Use](#How-to-Use)
 - [Future Scope](#Future-Scope)
 - [Acknowledgements](#Acknowledgements)
+
+## Project Overview
+The **Traffic Sign Board Recognition and Voice-Assisted System** is a machine learning project aimed at developing an automated solution to identify traffic signboards and provide real-time voice assistance to the driver. Using Convolutional Neural Networks (CNN), this system recognizes and interprets traffic signs, enhancing road safety and helping drivers navigate more efficiently.
 
 ## Problem Statement
 With the increasing number of vehicles on roads, traffic sign recognition plays a vital role in assisting drivers. Misinterpreting or missing traffic signs can lead to severe accidents and violations. Our solution aims to minimize these risks by creating a CNN-based recognition system integrated with voice assistance to alert the driver in real-time.
@@ -56,6 +56,7 @@ With the increasing number of vehicles on roads, traffic sign recognition plays 
 
 1. **Clone the Repository**
    ```bash
+   copy code
    git clone https://github.com/your-repo-name.git
    cd Traffic-Sign-Recognition
    ```
