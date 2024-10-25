@@ -1,0 +1,117 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  background-image: url('/static/Images/image.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0; /* Remove default margin */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #201e1e;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+.icons {
+  position: absolute;
+  top: 10px; /* Adjust the distance from the top */
+  right: 20px; /* Adjust the distance from the right */
+}
+
+.icons i {
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 24px; 
+  /* Adjust icon size */
+}
+
+.page-links {
+  display: none;
+  position: absolute;
+  top: 50px; /* Adjust the distance from the header */
+  right: 20px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  max-height: calc(100vh - 50px); /* Set maximum height to fit viewport */
+  overflow-y: auto; /* Add scrollbar if content exceeds max-height */
+}
+
+.page-links a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px; /* Smaller font size */
+  margin-bottom: 5px;
+}
+
+.page-links a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.container h1 {
+  background-color: rgba(0, 0, 0, 0.605);
+  border-radius: 15px;
+  color: #fff;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 50px;
+}
+.icons:hover{
+  color: yellow;
+}
+/* Responsive Styles */
+@media screen and (max-width: 668px) {
+  .icons {
+    position: static;
+    transform: translateY(0);
+    margin-bottom: 20px;
+    text-align:end
+  }
+
+  .icons i {
+    
+    display: block;
+    margin: 0 auto 10px;
+  }
+  .icons:hover{
+    color: yellow;
+  }
+
+  .page-links {
+    position: static;
+    display: none; /* Hide page links by default */
+    margin-top: 20px;
+    text-align: end;
+    max-height: none; /* Remove maximum height */
+    overflow-y: visible; /* Remove scrollbar */
+  }
+
+  .container h1 {
+    font-size: 45px; /* Adjust font size for smaller screens */
+    background-color: rgba(0, 0, 0, 0.605);
+    border-radius: 15px;
+  }
+
+}
