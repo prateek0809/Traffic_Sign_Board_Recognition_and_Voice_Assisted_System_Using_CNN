@@ -56,7 +56,6 @@ With the increasing number of vehicles on roads, traffic sign recognition plays 
 
 1. **Clone the Repository**
    ```bash
-   copy code
    git clone https://github.com/your-repo-name.git
    cd Traffic-Sign-Recognition
    ```
