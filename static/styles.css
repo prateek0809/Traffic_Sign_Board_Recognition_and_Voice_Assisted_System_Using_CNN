@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 270px;
+  margin: 50px auto;
+  /* background-color: #2bc1ad; */
+  background-color: grey;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 6rem;
+}
+#login-container{
+  background-color: #8ccfe9;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="submit"],
+input[type="date"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+
+  margin-bottom: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  height: 50%;
+  width: 40%;
+  border-radius: 7px;
+  justify-content: center;
+  text-align: center;
+}
+#registerDOB{
+  width: 95%;
+  height: 18px;
+}
+#reg-btn{
+  margin-left: 12px;
+}
+#text{
+  text-align: center;
+}
+#submitForgotPassword{
+ 
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  background-color:rgb(81, 193, 81);
+  border: none;
+}
+#submitForgotPassword:hover{
+  background-color: #0056b3;
+}
+#forgetpsw-btn{
+  
+  background-color: rgb(44, 183, 44);
+  margin-left: 11px;
+}
+#forgetpsw-btn:hover{
+  background-color: rgba(64, 142, 64, 0.866);
+}
+#reg-container{
+  background-color: #dfdfe8;
+  margin-top: 60px;
+  
+}
+nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 3rem;
+  width: 100%;
+  background-color:#04090ecd;
+  margin-bottom: 5rem;
+}
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+nav li{
+  margin: 10px;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+#login-container{
+  background-color: #8ccfe9;
+}
+
+/* .main{
+  margin-top: 0rem;
+} */
+#fg-body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/static/Images/Front\ View\ Numerous\ French\ Traffic\ Road\ Stock\ Illustration\ 367002503\ _\ Shutterstock\ \(1\).jpeg");
+}
+#reg-body{
+  background-image: url('/static/Images/image.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#login-body{
+  background-image: url('/static/Images/road.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

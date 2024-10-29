@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camera Webpage</title>
+    <link rel="stylesheet" href="/static/camera.css">
+    <link rel="icon" type="image/x-icon" href="/static/Images/logo.ico">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Logout</a></li>
+        <li><a href="/dataset.html">Dataset Distribution</a></li>
+        <li><a href="/performance.html">Performance Analysis</a></li>
+    </ul>
+</nav>
+
+    <video id="video" width="640" height="480" autoplay muted></video>
+    <button id="openButton">Open Camera</button>
+    <button id="closeButton">Close Camera</button>
+
+<script>
+    const video = document.getElementById('video');
+    const openButton = document.getElementById('openButton');
+    const closeButton = document.getElementById('closeButton');
+
+    openButton.addEventListener('click', () => {
+        fetch('/open_camera')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to open camera');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data.message);
+                // Send desired position to open the camera window
+                const position = { x: 100, y: 100 }; // Example coordinates
+                fetch('/open_camera?x=' + position.x + '&y=' + position.y)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Failed to open camera window at the specified position');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log(data.message);
+                    })
+                    .catch(error => {
+                        console.error('Error opening camera window at the specified position:', error);
+                    });
+            })
+            .catch(error => {
+                console.error('Error opening camera:', error);
+            });
+    });
+
+    closeButton.addEventListener('click', () => {
+        fetch('/close_camera')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to close camera');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data.message);
+            })
+            .catch(error => {
+                console.error('Error closing camera:', error);
+            });
+    });
+</script>
+</body>
+</html>
