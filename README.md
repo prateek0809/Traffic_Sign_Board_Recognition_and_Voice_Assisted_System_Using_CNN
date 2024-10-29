@@ -1,7 +1,3 @@
-
-
-
-
 # Traffic Sign Board Recognition and Voice-Assisted System using CNN
 
 ### Table of Contents
@@ -60,8 +56,8 @@ With the increasing number of vehicles on roads, traffic sign recognition plays 
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-repo-name.git
-   cd Traffic-Sign-Recognition
+   git clone https://github.com/Traffic_Sign_Board_Recognition_and_Voice_Assisted_System_Using_CNN.git
+   cd Traffic_Sign_Board_Recognition_and_Voice_Assisted_System_Using_CNN
    ```
 2. Install Required Dependencies
    Run the following commands to install the required Python libraries:
